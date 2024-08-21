@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Landing Page</title>
+</head>
+<body style="background-color:#E4C2C1;">
+   <header>
+      <div class="container">
+      <h1>Journey into a world of handmade wonders.</h1>
+   <nav>
+         <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery>Gallery</a></li>
+            <li><a href="#signup">Sign up</a></li>
+         </ul>
+   </nav>
+      </div>
+   </header>
+   <section id="home" class="hero">
+        <div class="container">        
+            <a href="https://imgur.com/5M3rqLg"><img src="https://i.imgur.com/5M3rqLg.jpg" title="artisans handicrafts logo" width="500" height="600" /></a>
+            <h1>Beautiful Handmade Crafts</h1>
+            <p>Explore our unique collection of handmade crafts from local artisans.</p>
+            <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+   </section>
+   <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to promoting and selling handmade crafts created by talented artisans. Our mission is to support the local community and provide unique, high-quality items to our customers.</p>
+        </div>
+   </section>
+   <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://i.imgur.com/PlDVQKq.jpg" alt="Craft 1" height="300" width="400"></div>
+                <div class="gallery-item"><img src="https://i.imgur.com/zeREfcS.jpg" alt="Craft 2" height="300" width="400"></div>
+                <div class="gallery-item"><img src="https://i.imgur.com/aPm7opO.jpg" alt="Craft 3" height="300" width="400"></div>
+                <div class="gallery-item"><img src="https://i.imgur.com/WfkSYMw.jpg" alt="Craft 4" height="300" width="400"></div>
+            </div>
+        </div>     
+    </section>
+    <section id="signup" class="contact">
+        <div class="container">
+            <h2>Sign up</h2>
+            <p>If you like to place an order, please reach out to us:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+           <p>&copy; 2024 Artisan Handicrafts. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<style>
+   header,footer {
+      background-color: #B6666F;
+      color: #FEF2F2;
+      text-align: center;
+      justify-content: center; 
+      display: flex;
+      padding: 1rem 0;
+   }
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: B6666F;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #FEF2F2;
+    text-decoration: none;
+}
+
+.hero {
+    color: B6666F;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero h2 {
+    margin: 0 0 1rem;
+}
+.hero p {
+    margin: 0 0 2rem;
+    font-size: 40px;
+}
+
+.hero .btn {
+    background-color: B6666F;
+    color: FEF2F2;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 0;
+}
+.about .container,
+.gallery .container,
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about p, .contact p{
+    font-size: 30px;
+}
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 1rem);
+}
+
+.gallery-item img {
+    width: 100%;       
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #B6666F;
+    color: #FEF2F2;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F53163;
+}
+footer{
+    background-color: #B6666F;
+    color: #FEF2F2;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer p{
+    margin: 0;
+}
+</style>
+</html>
